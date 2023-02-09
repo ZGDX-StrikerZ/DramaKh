@@ -1,0 +1,1269 @@
+/* General Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: rgba(40, 36, 36, 0.8);
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(33, 33, 33, 0.98);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* End General Styling */
+
+/* Navigation */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.navBar h1 a {
+  color: white;
+}
+
+.navBar h1 span {
+  color: orange;
+}
+
+/* End Navigation */
+
+/* List Items */
+.list-items ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-items button {
+  background-color: transparent;
+  padding: 10px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.list-items button:hover {
+  background-color: rgba(255, 255, 255, 0.118);
+  border-radius: 5px;
+}
+
+.list-items a {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  padding: 0px 5px;
+}
+
+.active:enabled {
+  background-color: rgba(255, 255, 255, 0.118);
+  border-radius: 3px;
+}
+
+.list-items i {
+  color: white;
+  padding-right: 5px;
+  text-align: center;
+}
+/* End List Items */
+/* Info */
+.info-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+
+.info-btn i {
+  font-size: 1rem;
+  margin-right: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.info-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#sign-in {
+  padding: 10px;
+}
+
+.info-btn a {
+  color: #fff;
+  padding: 0px 10px;
+}
+
+.info-btn button:hover {
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.045);
+}
+/* End Info */
+/* Search Bar */
+.search-box {
+  background-color: rgba(33, 33, 33, 0.98);
+  position: absolute;
+  width: 1000px;
+  height: 60px;
+  top: 0;
+  right: -320px;
+  padding: 40px 0px;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: top 0.4s;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+.open-popup {
+  visibility: visible;
+  bottom: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.category-drama ul {
+  background-color: rgba(33, 33, 33, 0.98);
+  display: flex;
+  margin-top: -13px;
+  padding: 15px;
+  background-color: #303030;
+}
+
+.category-drama a {
+  color: #fff;
+  margin: 0px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.118);
+  background-color: rgba(255, 255, 255, 0.118);
+  border-radius: 15px;
+}
+
+.search-box span {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 35px;
+  margin-left: 10px;
+}
+
+.search-box:before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+}
+
+.search-box input[type="text"] {
+  width: 95%;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: 5px solid #fff;
+  margin-left: 40px;
+  background-color: transparent;
+  border: transparent none;
+  outline: none;
+}
+
+/* End Search Bar */
+/* Top Drmama In Search Bar */
+.top-kdrama {
+  max-width: 100%;
+  height: 1000px;
+  background-color: rgba(33, 33, 33, 0.98);
+}
+.top-kdrama h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: start;
+  padding: 10px;
+}
+
+.card .container2 {
+  display: grid;
+  gap: 0.1rem;
+  margin: 0;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.container2 .thumbnail2 {
+  position: relative;
+  max-width: 240px;
+  height: 165px;
+  flex: 0 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  background: #424242;
+  cursor: pointer;
+  margin: 5px 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.drama-details2 h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 5px;
+  text-align: start;
+}
+
+.drama-details2 span {
+  position: absolute;
+  font-size: 14px;
+  top: 115px;
+  right: 8px;
+}
+/* End Top Drmama In Search Bar */
+/* Media Query For Top Drama */
+
+@media screen and (max-width: 1300px) {
+  .search-box {
+    width: 970px;
+    right: -340px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 240px;
+    height: 160px;
+  }
+  .drama-details2 span {
+    top: 110px;
+    right: 6px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .search-box {
+    width: 920px;
+    left: -445px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 255px;
+    height: 158px;
+  }
+  .drama-details2 span {
+    top: 105px;
+    right: 6px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .search-box {
+    width: 910px;
+    left: -408px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 242px;
+    height: 155px;
+  }
+  .drama-details2 span {
+    top: 101px;
+    right: 6px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .search-box {
+    width: 950px;
+    left: -378px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 240px;
+    height: 160px;
+  }
+  .drama-details2 span {
+    top: 110px;
+    right: 6px;
+  }
+
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+@media screen and (max-width: 1100px) {
+  .search-box {
+    width: 950px;
+    left: -338px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 240px;
+    height: 160px;
+  }
+  .drama-details2 span {
+    top: 110px;
+    right: 6px;
+  }
+
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+@media screen and (max-width: 1080px) {
+  .search-box {
+    width: 920px;
+    left: -315px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 370px;
+    height: 200px;
+  }
+  .drama-details2 span {
+    top: 145px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+@media screen and (max-width: 1020px) {
+  .search-box {
+    width: 900px;
+    left: -305px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 320px;
+    height: 195px;
+  }
+  .drama-details2 span {
+    top: 145px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+@media screen and (max-width: 980px) {
+  .search-box {
+    width: 880px;
+    left: -269px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 350px;
+    height: 190px;
+  }
+  .drama-details2 span {
+    top: 140px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  }
+}
+@media screen and (max-width: 960px) {
+  .search-box {
+    width: 860px;
+    left: -260px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 370px;
+  }
+  .drama-details2 span {
+    top: 135px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+@media screen and (max-width: 940px) {
+  .search-box {
+    width: 840px;
+    left: -255px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 400px;
+    height: 185px;
+  }
+  .drama-details2 span {
+    top: 130px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+@media screen and (max-width: 920px) {
+  .search-box {
+    width: 820px;
+    left: -250px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 410px;
+    height: 180px;
+  }
+  .drama-details2 span {
+    top: 130px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+@media screen and (max-width: 900px) {
+  .search-box {
+    width: 800px;
+    left: -245px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 420px;
+  }
+  .drama-details2 span {
+    top: 125px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+@media screen and (max-width: 880px) {
+  .search-box {
+    width: 780px;
+    left: -240px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 430px;
+    height: 175px;
+  }
+  .drama-details2 span {
+    top: 120px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+@media screen and (max-width: 860px) {
+  .search-box {
+    width: 845px;
+    left: -220px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 440px;
+    height: 185px;
+  }
+  .drama-details2 span {
+    top: 130px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+@media screen and (max-width: 840px) {
+  .search-box {
+    width: 825px;
+    left: -210px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 306px;
+    height: 180px;
+  }
+
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+@media screen and (max-width: 800px) {
+  .search-box {
+    width: 790px;
+    left: -193px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 800px;
+    height: 170px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+
+  .drama-details2 span {
+    top: 120px;
+    right: 6px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .search-box {
+    width: 770px;
+    left: -184px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 800px;
+    height: 170px;
+  }
+  .drama-details2 span {
+    top: 120px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+@media screen and (max-width: 750px) {
+  .search-box {
+    width: 740px;
+    left: -171px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 800px;
+    height: 170px;
+  }
+  .drama-details2 span {
+    top: 120px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+@media screen and (max-width: 720px) {
+  .search-box {
+    width: 710px;
+    left: -157px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 800px;
+    height: 160px;
+  }
+  .drama-details2 span {
+    top: 110px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+@media screen and (max-width: 690px) {
+  .search-box {
+    width: 690px;
+    left: -140px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 780px;
+    height: 225px;
+  }
+  .drama-details2 span {
+    top: 165px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  }
+}
+@media screen and (max-width: 650px) {
+  .search-box {
+    width: 600px;
+    left: -90px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 780px;
+    height: 195px;
+  }
+  .drama-details2 span {
+    top: 140px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  }
+}
+@media screen and (max-width: 590px) {
+  .search-box {
+    width: 600px;
+    left: -98px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 780px;
+    height: 195px;
+  }
+  .drama-details2 span {
+    top: 140px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  }
+}
+@media screen and (max-width: 550px) {
+  .category-drama a {
+    font-size: 13px;
+  }
+  .search-box {
+    width: 440px;
+    left: -19px;
+  }
+  .container2 .thumbnail2 {
+    max-width: 320px;
+    height: 145px;
+  }
+  .drama-details2 span {
+    top: 100px;
+    right: 6px;
+  }
+  .card .container2 {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+  .drama-details2 h2 {
+    font-size: 0.75rem;
+  }
+  .top-kdrama .card h1 {
+    margin-left: 15px;
+  }
+}
+/* End Media Query For Top Drama */
+
+/* Hamburger Menu */
+.hamburger-menu {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 14px;
+  left: 0;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.line {
+  display: none;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.change .line-1 {
+  transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(45deg) translate(-8px, -6px);
+}
+/* End Hamburger Menu */
+
+/* Media Query for Navigation */
+@media (max-width: 1110px) {
+  .list-items .nav-links a {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 949px) {
+  /* List Items */
+
+  .navBar h1 {
+    margin-left: 50px;
+  }
+
+  #sign-in {
+    font-size: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.118);
+    border-radius: 5px;
+    padding: 8px 0px;
+    padding-inline: 10px;
+    text-align: center;
+  }
+
+  #search-btn {
+    font-size: 1.4rem;
+    padding-right: 30px;
+  }
+
+  #search-btn span {
+    display: none;
+  }
+
+  .list-items .nav-links {
+    margin-top: 80px;
+    flex-direction: column;
+  }
+
+  .list-items .nav-links a {
+    font-size: 0.75rem;
+    padding-top: 10px;
+  }
+
+  .active:enabled {
+    background-color: transparent;
+  }
+
+  .list-items button:hover {
+    opacity: 0.8;
+    padding: 5px 10px;
+    padding-left: 20px;
+  }
+
+  /* End List Items */
+
+  /* Hamburger Menu */
+  .list-items {
+    position: fixed;
+    width: 320px;
+    height: 100%;
+    left: -400px;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(33, 33, 33, 0.98);
+    transition: left 0.5s ease-in-out;
+  }
+
+  .slideshow-container {
+    z-index: 9;
+  }
+
+  .navBar h1 {
+    z-index: 11;
+  }
+
+  .hamburger-menu {
+    z-index: 12;
+  }
+
+  .change {
+    left: 0;
+  }
+
+  .line {
+    display: block;
+  }
+}
+/* End Hamburger Menu */
+
+/* End Media Query for Navigation */
+
+/* Slide Images */
+
+.sliders {
+  position: relative;
+  width: 100%;
+}
+
+.myslides {
+  display: none;
+  height: 655px;
+  overflow: hidden;
+}
+
+.myslide img {
+  width: 100%;
+  max-height: 210px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.txt {
+  color: #fff;
+  background-color: rgba(40, 36, 36, 0.8);
+  top: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10px;
+  padding: 8px 12px;
+  position: absolute;
+}
+
+.dotsbox {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #fff;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* End Slide Images */
+
+/* Keyframe for dots */
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* End Keyframe for dots */
+
+/* Media Query for Slide Images */
+@media only screen and (max-width: 300px) {
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media (min-width: 497px) {
+  .myslide img {
+    max-height: 230px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (min-width: 947px) {
+  .myslide img {
+    max-height: 230px;
+  }
+}
+
+@media (min-width: 994px) {
+  .myslide img {
+    max-height: 420px;
+  }
+}
+/* End Media Query for Slide Images */
+
+/* Section */
+section,
+section a {
+  color: white;
+}
+
+.section {
+  font-weight: 400;
+  margin: 15px 30px;
+  transition: all 0.2s ease;
+}
+
+.section a {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-left: 47px;
+}
+
+.section p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.section a:hover,
+.latest-update a:hover {
+  background-color: rgba(255, 255, 255, 0.045);
+}
+
+@media (max-width: 947px) {
+  .section a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: -15px;
+  }
+}
+/* End Section */
+
+/* Latest Update Drama */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .container2 {
+  max-width: 1400px;
+  margin: 0 auto;
+  /* padding: 0 20px; */
+}
+
+.header h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-left: 10px;
+  color: #fff;
+  margin: 10px 5px;
+}
+
+.header span {
+  font-size: 0.75rem;
+}
+
+.slide-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 2rem;
+  margin: 0 .75rem;
+  cursor: pointer;
+  display: none;
+}
+
+i {
+  color: #fff;
+}
+
+.container,
+.container2 {
+  width: 100%;
+  /* height: 300px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  /* border: 1px solid black; */
+}
+
+.container::-webkit-scrollbar,
+.container2::-webkit-scrollbar {
+  height: 5px;
+  width: 1px;
+  border: 1px solid #d5d5d5;
+  background: #d5d5d5;
+}
+
+.container::-webkit-scrollbar-track,
+.container2::-webkit-scrollbar-track {
+  --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.container .thumbnail {
+  position: relative;
+  max-width: 200px;
+  height: 100%;
+  flex: 0 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  background: #424242;
+  cursor: pointer;
+  margin: 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: scale(0.95);
+  transition: all 0.3s;
+}
+
+.container .thumbnail:hover,
+.container2 .thumbnail2:hover {
+  transform: scale(1);
+}
+
+.drama-details h2 {
+  color: #fff;
+  font-weight: 500;
+  padding-left: 5px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+.drama-details span {
+  position: absolute;
+  top: 90px;
+  right: 8px;
+  color: #fff;
+  font-size: 500;
+}
+.drama-details .coming-soon span {
+  position: absolute;
+  left: 5px;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.service ul li {
+  display: none;
+}
+
+/* Media Query of Latest Update */
+@media (min-width: 479px) {
+  .arrow {
+    display: none;
+  }
+
+  .container .thumbnail {
+    max-width: 220px;
+  }
+
+  .drama-details span {
+    top: 105px;
+    right: 8px;
+  }
+
+  .header h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-left: 10px;
+    color: #fff;
+    margin: 10px 5px;
+  }
+
+  .drama-details h2 {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 769px) {
+  .container .thumbnail {
+    max-width: 240px;
+  }
+}
+
+@media (min-width: 968px) {
+  .arrow {
+    display: none;
+  }
+
+  .container .thumbnail {
+    max-width: 350px;
+  }
+
+  .header h2 {
+    font-size: 1.2rem;
+    margin: 10px 10px;
+    font-weight: 600;
+  }
+
+  .drama-details span {
+    top: 170px;
+    right: 8px;
+  }
+
+  .drama-details h2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+
+  .service ul li {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .arrow {
+    display: block;
+  }
+  .container .thumbnail {
+    max-width: 280px;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+    margin: 10px 70px;
+    font-weight: 800;
+  }
+
+  .drama-details h2 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .drama-details span {
+    top: 135px;
+    right: 8px;
+  }
+}
+/* Media Query of Latest Update */
+
+/* Term of Privacy */
+.service {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 20px;
+}
+.service ul {
+  display: flex;
+  margin-left: 20px;
+}
+.service a {
+  padding-left: 10px;
+  color: #fff;
+  font-size: 0.75rem;
+}
+/* End Term of Privacy */
+
+.version{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: rgba(33, 33, 33, .98);
+  padding-top: 5px;
+  margin-bottom: 1px;
+}
+
+.version h4 {
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+.version img {
+  width: 50px;
+}

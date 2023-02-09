@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DramaKH</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@500;600&family=Be+Vietnam+Pro:wght@400;500;700&family=DM+Sans:wght@400;700&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700&family=GFS+Neohellenic:wght@400;700&family=Inter:wght@400;700;800&family=Karla:wght@400;700&family=Montserrat:wght@300;400;700&family=Plus+Jakarta+Sans:ital,wght@0,500;1,400&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1bcb1fb516.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    
+    <!-- Navigation-->
+    <header>
+        <div id="navBar" class="navBar">
+            <h1><a href="#">Drama<span>Kh</span></a></h1>
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+            <div class="list-items">
+                <ul class="nav-links">
+                    <li><button><a href="#"><i class="fa-solid fa-download"></i> Install PWA App</a></button></li>
+                    <li><button class="active"><a href="#"><i class="fa-solid fa-house"></i> Home</a></button></li>
+                    <li><button><a href="#"><i class="fa-solid fa-comments"></i> FAQ</a></button></li>
+                    <li><button><a href="#"><i class="fa-solid fa-message"></i> Request Drama</a></button></li>
+                    <li><button><a href="#"><i class="fa-solid fa-fill-drip"></i> Theme</a></button></li>
+                    <li><button><a href="#"><i class="fa-solid fa-copy"></i> Explore</a></button></li>
+                </ul>
+            </div>
+            <div class="info-btn">
+                <button onclick="openPopup()"><i class="fa fa-search search-btn" aria-hidden="true"> </i>Search</button>
+                <div class="search-box" id="popup">
+                    <button onclick="closePopup()"><span>&#10094;</span></button>
+                    <input type="text" placeholder="Search">
+                    <div class="category-drama">
+                        <ul>
+                            <li><a href="#">All</a></li>
+                            <li><a href="#">TVSeries</a></li>
+                            <li><a href="#">Anime</a></li>
+                            <li><a href="#">Movie</a></li>
+                            <li><a href="#">Hollywood</a></li>
+                        </ul>
+                        <div class="top-kdrama">
+                            <div class="card">
+                                <h1>Popular Search</h1>
+                                <div class="container2">
+                                    <div class="thumbnail2">
+                                        <img src="Slide-Img/L&P.jfif" alt="">
+                                        <div class="drama-details2">
+                                            <h2>Lighter And Princess</h2>
+                                            <p> <span>EP 36</span></p>
+                                        </div>
+                                     </div>
+    
+                                     <div class="thumbnail2">
+                                        <img src="Slide-Img/LBFAD.webp" alt="">
+                                        <div class="drama-details2">
+                                            <h2>Love Between Fairy And Devil</h2>
+                                            <p> <span>EP 39</span></p>
+                                        </div>
+                                     </div>
+    
+                                     <div class="thumbnail2">
+                                        <img src="Slide-Img/Love Like The Galaxy.jfif" alt="">
+                                        <div class="drama-details2">
+                                            <h2>Love Like The Galaxy</h2>
+                                            <p> <span>EP 56</span></p>
+                                        </div>
+                                     </div>
+    
+                                     <div class="thumbnail2">
+                                        <img src="Slide-Img/Unforgettable Love.avif" alt="">
+                                        <div class="drama-details2">
+                                            <h2>Unforgettable Love</h2>
+                                            <p> <span>EP 25</span></p>
+                                        </div>
+                                     </div>
+                                    <div class="thumbnail2">
+                                        <img src="Slide-Img/Forbidden Love.jfif" alt="">
+                                        <div class="drama-details2">
+                                            <h2>Forbidden Love</h2>
+                                            <p> <span>EP 30</span></p>
+                                        </div>
+                                     </div>
+    
+                                     <div class="thumbnail2">
+                                        <img src="Top C-Drama/FIYS.jpg" alt="">
+                                        <div class="drama-details2">
+                                            <h2>Falling Into Your Smile</h2>
+                                            <p> <span>EP 31</span></p>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <button id="sign-in" class="active"><a href="#"><i class="fa-solid fa-user-large"></i> Sign in</a></button> 
+            </div>
+        </div>
+    </header>
+    <!-- End Navigation-->
+
+    <!--Main Content-->
+    <main>
+        <div class="sliders">
+            <div class="myslide fade">
+                <div class="txt">Lighter & Princess</div>
+                <a href="L&P.html"><img src="Slide-Img/L&P.jfif" style="height: 450px;"></a>
+            </div>
+            
+            <div class="myslide fade">
+                <div class="txt">Forbidden Love - Unchained Love</div>
+                <img src="Slide-Img/Forbidden Love.jfif" style="height: 450px;">
+            </div>
+            
+            <div class="myslide fade">
+                <div class="txt">The Blood Of Youth</div>
+                <img src="Slide-Img/The Blood of Youth.jfif" style="height: 450px;">
+            </div>
+            
+            <div class="myslide fade">
+                <div class="txt">Love Between Fairy And Devil</div>
+                <img src="Slide-Img/LBFAD.webp" style="height: 450px;">
+            </div>
+            
+            <div class="myslide fade">
+                <div class="txt">Love Like The Galaxy</div>
+                <img src="Slide-Img/Love Like The Galaxy.jfif" style="height: 450px;">
+            </div>
+
+            <div class="myslide fade">
+                <div class="txt">The Silence Of Monster</div>
+                <img src="Slide-Img/The Silence Of Monster.webp" style="height: 450px;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dotsbox" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+        
+
+    </main>
+    <!--Section-->
+    <section>
+        <div class="section">
+            <a href="#">Continue watching</a>
+            <p>Sign in now to save your watch history.</p>
+        </div>
+    </section>
+<!-- Latest Update -->
+    <footer>
+        <div class="header">
+            <a href="#"><h2>Latest Update <span>&#10095;</span></h2></a>
+        </div>
+            <div class="slide-container">
+            <i id="slide-left" class="arrow fa-solid fa-arrow-left"></i>
+        <div class="container" id="slider">
+            
+            <div class="thumbnail">
+                <a href="L&P.html"><img src="Slide-Img/L&P.jfif" alt="" style="width: 100%;"></a>
+                <div class="drama-details">
+                    <h2>Lighter And Princess</h2>
+                    <p> <span>EP 18</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/FlightToYou.jfif" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Flight To You</h2>
+                    <p> <span>EP 10</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/Forbidden Love.jfif" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Forbidden Love - Unchained Love</h2>
+                    <p> <span>EP 30</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/The Blood of Youth.jfif" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>The Blood Of Youth</h2>
+                    <p> <span>EP 20</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/The Silence Of Monster.webp" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>The Silence Of The Monster</h2>
+                    <p> <span>EP 26</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/The Immortal Promise.jpg" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>The Immortal Promise</h2>
+                    <p> <span>EP 22</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/LBFAD.webp" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Love Between Fairy And Devil</h2>
+                    <p> <span>EP 28</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/The Immortal Samsara.webp" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Immortal Samsara</h2>
+                    <p> <span>EO 41</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/Who Rule the world.webp" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Who Rules The World</h2>
+                    <p> <span>EP 32</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/Unforgettable Love.avif" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Unforgettable Love</h2>
+                    <p> <span>EP 18</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail">
+                <img src="Slide-Img/Please Feel At Ease Mr.Ling.jfif" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Please Feel At Ease Mr. Ling</h2>
+                    <p> <span>EP 22</span></p>
+                </div>
+            </div>
+            
+        </div>
+        <i id="slide-right" class="arrow fa-solid fa-arrow-right"></i>
+    </div>
+
+    
+</footer>
+<!--End Latest-Update -->
+
+<!-- Top K-Drama -->
+    <footer>
+        <div class="header">
+            <a href="#"><h2>Top K-Drama <span>&#10095;</span></h2></a>
+        </div>
+            <div class="slide-container">
+            <i id="slide-left2" class="arrow fa-solid fa-arrow-left"></i>
+        <div class="container" id="slider2">
+            
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/A Business Proposal.jpg" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>A Business Proposal</h2>
+                    <p> <span>EP 13</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/shooting star.webp" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Sh**ting Stars - Shooting Stars</h2>
+                    <p> <span>EP 16</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/Eve 2022 - Eve's Scandal.jpg" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Eve 2022 - Eve's Scandal</h2>
+                    <p> <span>EP 16</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/Extraordinary Attorney Woo.jpg" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Extraordinary Attorney Woo</h2>
+                    <p> <span>EP 16</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/Alchemy of Souls.jfif" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Alchemy of Souls</h2>
+                    <p> <span>EP 22</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/Doom at Your Service (2021).jfif" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Doom at Your Service (2021)</h2>
+                    <p> <span>EP 16</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/Alchemy of Souls Season 2 - Alchemy of Souls Light and Shadow.webp" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Alchemy of Souls Season 2 - Alchemy of Souls Light and Shadow</h2>
+                    <p> <span>EP 9</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/Snowdrop.jfif" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Snowdrop</h2>
+                    <p> <span>EP 16</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/Big Mouth.jpg" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Big Mouth</h2>
+                    <p> <span>EP 16</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/Happiness.jpg" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>Happiness</h2>
+                    <p> <span>EP 12</span></p>
+                </div>
+            </div>
+
+            <div class="thumbnail thumbnail2">
+                <img src="Top K-Drama/All of Us Are Dead.jpg" alt="" style="width: 100%;">
+                <div class="drama-details">
+                    <h2>All of Us Are Dead</h2>
+                    <p> <span>EP 12</span></p>
+                </div>
+            </div>
+            
+        </div>
+        <i id="slide-right2" class="arrow fa-solid fa-arrow-right"></i>
+    </div>
+</footer>
+
+<!-- End Top K-Drama -->
+<!--Top C-Drama-->
+<footer>
+    <div class="header">
+        <a href="#"><h2>Top C-Drama <span>&#10095;</span></h2></a>
+    </div>
+        <div class="slide-container">
+        <i id="slide-left3" class="arrow fa-solid fa-arrow-left"></i>
+    <div class="container" id="slider3">
+        
+        <div class="thumbnail thumbnail3">
+            <img src="Top C-Drama/FIYS.jpg" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Falling Into Your Smile</h2>
+                <p> <span>EP 31</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Slide-Img/L&P.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Lighter And Princess</h2>
+                <p> <span>EP 37</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Slide-Img/LBFAD.webp" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Love Between Fairy And Devil</h2>
+                <p> <span>EP 39</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Top C-Drama/Unforgettable Love.webp" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Unforgettable Love</h2>
+                <p> <span>EP 25</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Slide-Img/Who Rule the world.webp" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Who Rules The World</h2>
+                <p> <span>EP 40</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Slide-Img/Love Like The Galaxy.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Love Like The Galaxy</h2>
+                <p> <span>EP 56</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Slide-Img/Cute Programmer.avif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Cute Programmer</h2>
+                <p> <span>EP 30</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Top C-Drama/0.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Once We Get Married</h2>
+                <p> <span>EP 24</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Top C-Drama/Our Secret.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Our Secret</h2>
+                <p> <span>EP 25</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Top C-Drama/download.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>She And Her Perfect Husband</h2>
+                <p> <span>EP 40</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail3">
+            <img src="Top C-Drama/0 (1).jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Hello The Sharpshooter</h2>
+                <p> <span>EP 40</span></p>
+            </div>
+        </div>
+        
+    </div>
+    <i id="slide-right3" class="arrow fa-solid fa-arrow-right"></i>
+</div>
+</footer>
+<!--End Top C-Drama-->
+<!-- Anime -->
+<footer>
+    <div class="header">
+        <a href="#"><h2>Anime <span>&#10095;</span></h2></a>
+    </div>
+        <div class="slide-container">
+        <i id="slide-left4" class="arrow fa-solid fa-arrow-left"></i>
+    <div class="container" id="slider4">
+        
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/Throne of Seal.webp" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Throne of Seal - Shen Yin Wangzuo</h2>
+                <p> <span>EP 37</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/tomo-chan.jpe" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Tomo-chan wa Onnanoko! - Tomo-chan Is a Girl</h2>
+                <p> <span>EP 2</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/Kaina-of-the-Great-Snow-Sea-thumbnail.jpg" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Ooyukiumi no Kaina - Kaina of the Great Snow Sea</h2>
+                <p> <span>EP 1</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/overmind.jpg" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Technoroid Overmind</h2>
+                <p> <span>EP 2</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/Bungou Stray Dogs 4th Season.jpg" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Bungou Stray Dogs 4th Season</h2>
+                <p> <span>EP 2</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/Tsurune Tsunagari no Issha - Tsurune 2nd Season.jpg" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Tsurune Tsunagari no Issha - Tsurune 2nd Season</h2>
+                <p> <span>EP 2</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/The Eminence.jpg" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Tensei Oujo to Tensai Reijou no Mahou Kakumei - The Magical...</h2>
+                <p> <span>EP 2</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/Swallowed.jpg" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Swallowed Star 2nd Season</h2>
+                <p> <span>EP 2</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/wan jie.jfif"" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Wan Jie Du Zun 2nd Season - Ten Thousand Worlds 2nd Season</h2>
+                <p> <span>EP 44</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/Zhu Xian.webp" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Zhu Xian - Jade Dynasty</h2>
+                <p> <span>EP 25</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail4">
+            <img src="Anime/Wu Geng Ji 4th Season Part 2.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Wu Geng Ji 4th Season Part 2</h2>
+                <p> <span>EP 3</span></p>
+            </div>
+        </div>
+        
+    </div>
+    <i id="slide-right4" class="arrow fa-solid fa-arrow-right"></i>
+</div>
+</footer>
+<!-- End Anime -->
+<!--- Upcoming-->
+<footer>
+    <div class="header">
+        <a href="#"><h2>Upcoming <span>&#10095;</span></h2></a>
+    </div>
+        <div class="slide-container">
+        <i id="slide-left5" class="arrow fa-solid fa-arrow-left"></i>
+    <div class="container" id="slider5">
+        
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/Chinese Paladin.jpg" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Chinese Paladin Season 6 - Sword and Fairy 6</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/Back From The Brink.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Back From The Brink</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/Lost You Forever.avif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Lost You Forever</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/till the end of the moon.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Till The End of the Moon</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/South wind.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>South Wind Knows My Mood</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/Hidden love.Jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Hidden Love</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/0535000062FB35AE13F7FF0950C133A6.jfif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Love When the Stars Fall</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/Snow Eagle Love.avif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Snow Eagle Lord (Drama)</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/Wonder Land.avif" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Wonderland of love</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/The Longest Promise.avif" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>The Longest Promise</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+
+        <div class="thumbnail thumbnail5">
+            <img src="Upcoming/Immortality.jpg_large" alt="" style="width: 100%;">
+            <div class="drama-details">
+                <h2>Immortality</h2>
+                <p> <span>EP 0</span></p>
+                <p class="coming-soon"><span>Coming 2023</span></p>
+            </div>
+        </div>
+        
+    </div>
+    <i id="slide-right5" class="arrow fa-solid fa-arrow-right"></i>
+</div>
+</footer>
+<!-- End Upcoming-->
+<!-- Term of Service-->
+<footer>
+    <div class="service">
+        <ul>
+            <li><a href="#">Hosted by Xiaolanhua - Offshore Web Hosting!</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </div>
+</footer>
+
+<div class="version">
+    <h4>Version 3.4</h4>
+    <img src="slide-img/GoogleStore.png" alt="">
+</div>
+<!-- End Term of Service-->
+    <script src="nav.js"></script>
+    <script src="scroll.js"></script>
+    <script src="searchbar.js"></script>
+</body>
+</html>
